@@ -1232,6 +1232,9 @@ body#outbox #core ul.messages .notice:before {
     background-color:#fff;
     padding:12px;
     padding-bottom:0;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;    
 }
 
 #content #content_inner > .threaded-notices > .notice:hover,
@@ -1261,6 +1264,14 @@ ul.messages .notice .p-author {
 .notice .addressees:before {
     content: "\00a0▸\00a0";
     color:#aaa;
+	}
+
+.notice .addressees {
+	
+	}
+
+.notice .addressees {
+	font-weight:bold;
 	}
 
 .notice .addressees .group {
@@ -1308,6 +1319,7 @@ ul.messages .notice .p-author {
     font-size: 15px;
     position: relative;
     z-index: 10;    
+	white-space: normal;    
 }
 
 .notice .attachment:not(.more) {
