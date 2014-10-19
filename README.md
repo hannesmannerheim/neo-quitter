@@ -19,6 +19,12 @@ more details.
 You should have received a copy of the  GNU Affero General Public License  
 along with Neo Quitter. If not, see <http://www.gnu.org/licenses/>.            
                                                                            
+About
+-----
+
+Neo Quitter is based Neo, the standard theme for GNU Social.  
+
+
 Setup
 -----
 
