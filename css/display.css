@@ -117,7 +117,7 @@ body#outbox #core ul.messages .notice:before,
 
 
 address img {
-    height: 44px;
+    max-height: 42px;
     margin-left: 10px;
     margin-top: -4px;
     max-width: none;
