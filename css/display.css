@@ -109,8 +109,7 @@ h6 {font-size: 1em;}
 #site_nav_object li a:hover,
 #showstream .entry-metadata .repeat,
 body#outbox #core ul.messages .notice:before,
-.form_user_subscribe input[type="submit"],
-#header:before {
+.form_user_subscribe input[type="submit"] {
     background-image: url("../icons-hires.png?v=1");
     background-size: 150px 2786px;
     background-repeat:no-repeat;
