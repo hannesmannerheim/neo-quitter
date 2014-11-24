@@ -94,7 +94,7 @@ h5 {font-size: 1.2em;}
 h6 {font-size: 1em;}
 
 #wrap {
- padding-top: 40px;
+ padding-top: 46px;
  border:0 none;
  background-color: transparent;
  width:960px;
@@ -109,58 +109,58 @@ h6 {font-size: 1em;}
 #site_nav_object li a:hover,
 #showstream .entry-metadata .repeat,
 body#outbox #core ul.messages .notice:before,
-.form_user_subscribe input[type="submit"] {
-    background-image: url("../icons-hires.png?v=1");
+.form_user_subscribe input[type="submit"],
+#header:before,
+address {
+    background-image: url("../icons-hires.png?v=2");
     background-size: 150px 2786px;
     background-repeat:no-repeat;
 	}
 
-
-address img {
-    max-height: 42px;
-    margin-left: 10px;
-    margin-top: -4px;
-    max-width: none;
-}
+address {
+	background-position: -10px -600px;
+    cursor: pointer;
+    display: block;
+    height: 34px;
+    left: 50%;
+    margin-left: -466px;
+    position: fixed;
+    top: 6px;
+    width: 89px;
+    z-index: 1001;
+    background-color:red;
+	}
+address:hover {
+	background-position: -10px -635px;	
+	}
+address a {
+    height: 34px;
+    width: 89px;	
+    display:block;
+	}	
 
 .logo {
-	display: block;
-	position: fixed;
-	z-index: 1001;
-	left: 50%;
-	margin-left: -480px;
+	display: none;
 	}
 
 #header {
-    padding-top: 12px;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:block;
-    z-index:100;
-  	background-position: 0 -350px;
-	background-repeat: repeat-x;   
-	height:30px; 
+	background-color: #fff;
+    display: block;
+    height: 30px;
+    left: 0;
+    padding-top: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.25)    
 }
-
-#header:before {
-    background-position: center -400px;
-    background-repeat: no-repeat;
-    content: " ";
-    height: 40px;
-    left: 50%;
-    margin-left: -340px;
-    position: absolute;
-    width: 100px;
-    z-index: 101;
-    top:-3px;
-	}
 
 #core {
     border-top: 0 none;
     border-left: 0 none;
     border-right: 0 none;
+    min-height:calc(100vh - 46px);
 }
 
 #aside_primary_wrapper {
@@ -179,7 +179,7 @@ address img {
 }  
 
 #site_nav_local_views {
-    padding: 52px 10px 40px;
+    padding: 13px 10px 40px;
     }
 
 #footer {
@@ -205,27 +205,26 @@ address img {
 
 #site_nav_global_primary a {
     padding: 2px 10px 2px 10px;
-    height: 41px;
-    line-height: 41px;    
+    height: 46px;
+    line-height: 46px;    
     box-sizing:border-box;
     display: block;
     float: left;
-    color: rgba(255,255,255,0.8);
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-    border-bottom:0 solid #ED7EFF;
-    transition:border-width 0.2s;
+    color: #777777;
+    border-bottom:0 none;
+    transition:all 0.2s;
 }
 
 #site_nav_global_primary a:hover {
-    color: #fff !important;
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    color: #ED7EFF;
     border-bottom:3px solid #ED7EFF;
     text-decoration: none;
 }
 
 #site_nav_global_primary #nav_logout a:before,
 #site_nav_global_primary #nav_admin a:before,
-#site_nav_global_primary #nav_account a:before {
+#site_nav_global_primary #nav_account a:before,
+#site_nav_global_primary #toggleqvitter a:before {
 	content: "\f085";
     display: inline-block;
     font: 20px/1 "fa";
@@ -241,6 +240,9 @@ address img {
 #site_nav_global_primary #nav_logout a:before {
 	content: "\f206";	
 	}
+#site_nav_global_primary #toggleqvitter a:before {
+	content: "\f0c3";	
+	}	
 	
 	
 
@@ -266,9 +268,9 @@ address img {
     cursor: pointer;
     height: 18px;
     position: absolute;
-    right: 12px;
+	right: 25px;
     text-indent: -9999px;
-    top: 1px;
+    top: 4px;
     width: 20px;
     z-index: 2;
 	background-position: 0px -293px;    
@@ -279,25 +281,22 @@ address img {
 }
 
 #header-search #search-q {
-    background-color: #CCCCCC;
-    color: #999999;
-    position: absolute;
-    right: 10px;
-    z-index: 1;	
-	background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
-    top: -4px;
-	border: 0 none;
-    border-radius: 13px 13px 13px 13px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 21px;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.8);
     display: block;
     font-size: 12px;
-    height: 14px;
+    height: 32px;
     line-height: 1;
-    padding: 6px 27px 6px 12px;
+    padding: 5px 27px 6px 12px;
     transition: all 0.2s ease-in-out 0s;
-    width: 163px;
-    margin: 0;
-    outline: 0 none; 
+    width:100%;
+    outline:none;
+    margin-top:-4px;
+    right:10px;
+    width:163px;
 	}
 #header-search #search-q:focus {
 	box-shadow:none;
@@ -311,7 +310,7 @@ address img {
 	height:40px;
 	position:absolute;
 	top:-10px;
-	right:210px;
+	right:190px;
 	}
 	
 
@@ -575,7 +574,7 @@ ul.profile_list li {
 
 #aside_primary .account_profile_block .entity_actions input[type="submit"],
 #aside_primary .account_profile_block .entity_actions p {
-	width:124px;
+	width:114px;
 	text-align:center;
 	}
 
@@ -625,11 +624,12 @@ ul.profile_list li {
     text-decoration: none;		
 	}
 .form_user_subscribe input[type="submit"] {
-    background: url("../icons-hires.png?v=1") 5px -219px / 150px 2786px no-repeat, linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 100%) !important;
+	background: url("../icons-hires.png?v=1") no-repeat scroll 2px -219px / 150px 2786px, linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    padding: 5px 0 5px 30px !important;
     padding:5px 0 5px 30px !important;	
 	}	
 .form_user_subscribe input[type="submit"]:hover {
-    background: url("../icons-hires.png?v=1") 5px -219px / 150px 2786px no-repeat, linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%) !important;
+    background: url("../icons-hires.png?v=1") 2px -219px / 150px 2786px no-repeat, linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%) !important;
     padding:5px 0 5px 30px !important;	
 	}		
 .form_user_unsubscribe input[type="submit"] {
@@ -749,6 +749,7 @@ ul.profile_list li {
 /* aside primary */
 
 #aside_primary {
+	width:205px;
     float: left;
     left: 802px;
     margin: 0 0 20px;
@@ -766,7 +767,7 @@ ul.profile_list li {
 
 .profile_block .entity_actions {
     float: right;
-    width: 110px;
+    width: 100px;
 }
 
 .profile_block .entity_moderation:hover ul,
@@ -1210,7 +1211,7 @@ body#outbox #core ul.messages .notice:before {
     margin-bottom: 18px;
     color:rgba(0,0,0,0.4);
     font-size:13px;    
-    letter-spacing: 1px;    
+    letter-spacing: 0.3px;    
 }
 
 
@@ -2026,13 +2027,14 @@ ul.messages .notice .p-author {
 
 
 #gnusocial-version {
-	border:1px solid rgba(0,0,0,0.3);
-	padding:15px;
-	float:left;
-	border-radius:15px;
-	font-size:11px;
-	width:80%;
-	}
+border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 11px;
+    padding: 15px;
+    width: 100%;
+    }
 #gnusocial-version a,
 #gnusocial-version p {
 	margin:0;
