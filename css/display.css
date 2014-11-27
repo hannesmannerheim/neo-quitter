@@ -128,7 +128,7 @@ address {
     top: 6px;
     width: 89px;
     z-index: 1001;
-    background-color:red;
+    background-color:#0084B4;
 	}
 address:hover {
 	background-position: -10px -635px;	
@@ -318,6 +318,37 @@ address a {
     background-color: transparent;
     padding: 12px 40px 40px 0;
     }
+
+/* faq */
+
+body#doc #content_inner {
+	background-color:#fff;
+	padding:10px;
+	border-radius:5px;
+	}
+
+body#doc #content_inner h1 {
+	padding-top:10px;
+	}
+body#doc #content_inner h2 {
+	padding-top:50px;
+	line-height: 27px;	
+	}
+body#doc #content_inner li {
+	padding-left:20px;
+	font-weight:bold;
+	}	
+body#doc #content_inner p.indent {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 3px solid #ccc;
+    margin-left: 50px;
+    padding: 5px 5px 5px 10px;
+	}	
+body#doc #content_inner p.faq-credits {
+	margin-top:40px;
+	}	
+	
+	
 
 /* input forms */
 
