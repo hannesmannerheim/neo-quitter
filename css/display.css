@@ -224,7 +224,8 @@ address a {
 #site_nav_global_primary #nav_logout a:before,
 #site_nav_global_primary #nav_admin a:before,
 #site_nav_global_primary #nav_account a:before,
-#site_nav_global_primary #toggleqvitter a:before {
+#site_nav_global_primary #toggleqvitter a:before,
+#site_nav_global_primary #top_nav_doc_faq a:before {
 	content: "\f085";
     display: inline-block;
     font: 20px/1 "fa";
@@ -242,6 +243,9 @@ address a {
 	}
 #site_nav_global_primary #toggleqvitter a:before {
 	content: "\f0c3";	
+	}	
+#site_nav_global_primary #top_nav_doc_faq a:before {
+	content: "\f1cd";	
 	}	
 	
 	
@@ -329,10 +333,16 @@ body#doc #content_inner {
 
 body#doc #content_inner h1 {
 	padding-top:10px;
+	font-size:25px;
+	color:#333;
+	text-transform:none;
 	}
 body#doc #content_inner h2 {
 	padding-top:50px;
 	line-height: 27px;	
+	}
+body#doc #content_inner h2#faq-table-of-contents {
+	padding-top:20px;
 	}
 body#doc #content_inner li {
 	padding-left:20px;
