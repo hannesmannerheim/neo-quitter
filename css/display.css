@@ -341,6 +341,18 @@ body#doc #content_inner h2 {
 	padding-top:50px;
 	line-height: 27px;	
 	}
+	
+body#doc #content_inner h2 a {
+	font-size:0;
+	}
+body#doc #content_inner h2 a:before {
+	content:"\f0aa";
+	font-family:"fa";
+	font-size:20px;
+	}		
+body#doc #content_inner h2 a:hover {
+	text-decoration:none;
+	}			
 body#doc #content_inner h2#faq-table-of-contents {
 	padding-top:20px;
 	}
