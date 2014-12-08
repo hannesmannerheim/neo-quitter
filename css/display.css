@@ -280,6 +280,7 @@ address a {
 	background-position: 0px -293px;    
     }
 
+/* hide site notice after 5 s */
 #site_notice {
     background-color: pink;
     border-radius: 0;
@@ -290,11 +291,14 @@ address a {
     padding: 10px 20px 10px 40px;
     position: fixed;
     text-align: left;
-    width: 100%;
+    width: 100%;    
+    -moz-animation: hideSiteNotice 2s ease-in 5s forwards;
+    -webkit-animation: hideSiteNotice 2s ease-in 5s forwards;
+    -o-animation: hideSiteNotice 2s ease-in 5s forwards;
+    animation: hideSiteNotice 2s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;    
 }
-#site_notice:focus {
-	display:none;
-	}
 #site_notice:before {
 	width:30px;
 	height:30px;
@@ -305,6 +309,18 @@ address a {
  	content: "\f071";
  	font-family:fa;
 	}	
+@keyframes hideSiteNotice {
+    to {
+		bottom:-1000px;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes hideSiteNotice {
+    to {
+		bottom:-1000px;
+		visibility:hidden;
+    }
+}	
 
 #header-search #search-q {
     background-color: rgba(0,0,0,0.03);
