@@ -163,6 +163,11 @@ address a {
     min-height:calc(100vh - 46px);
 }
 
+#content_inner {
+	width:544px;
+	overflow-x:hidden;
+	}
+
 #aside_primary_wrapper {
     background-color: transparent;  
 }    
@@ -900,20 +905,6 @@ ul.profile_list li {
 #popular_notices .p-author {
 	position:relative;
 	}
-#popular_notices .p-author:before {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    box-sizing: border-box;
-    content: "";
-    display: block;
-    height: 24px;
-    left: -32px;
-    position: absolute;
-    top: 2px;
-    width: 24px;
-    z-index: 10;
-	}	
-
 
 #aside_primary td {
     padding-right: 20px;
@@ -1322,9 +1313,6 @@ body#outbox #core ul.messages .notice:before {
     background-color:#fff;
     padding:12px;
     padding-bottom:0;
-    white-space: nowrap;
-    overflow:hidden;
-    text-overflow: ellipsis;    
 }
 
 #content #content_inner > .threaded-notices > .notice:hover,
@@ -1339,9 +1327,12 @@ body#outbox #core ul.messages .notice:before {
 	}	
 
 .notice .p-author {
+    display: inline-block;
     font-weight: bold;
-    height: 48px;
-    margin-right: 0;    
+    height: 56px;
+    margin-right: 0;
+    white-space: nowrap;
+    padding-right:5px;
 	}
 ul.messages .notice .p-author {
 	
@@ -1352,8 +1343,10 @@ ul.messages .notice .p-author {
 	}
 
 .notice .addressees:before {
-    content: "\00a0▸\00a0";
+    content: "\f105\00a0";
     color:#aaa;
+    font-family:fa;
+    font-weight:normal;
 	}
 
 .notice .addressees {
@@ -1361,7 +1354,10 @@ ul.messages .notice .p-author {
 	}
 
 .notice .addressees {
-	font-weight:bold;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    white-space: nowrap;
 	}
 
 .notice .addressees .group {
@@ -1404,12 +1400,12 @@ ul.messages .notice .p-author {
 
 #content .notice .e-content,
 .user_in #content .notice .e-content {
-    margin-left: 0;
-    margin-top: 40px;
     font-size: 15px;
+    margin-left: 0;
+    margin-top: 0;
     position: relative;
-    z-index: 10;    
-	white-space: normal;    
+    white-space: normal;
+    z-index: 10; 
 }
 
 .notice .attachment:not(.more) {
@@ -1701,7 +1697,8 @@ ul.messages .notice .p-author {
 #content .notice .threaded-replies .notice div.e-content {
     margin: 0;
     font-size:13px;
-	padding-left: 40px;    
+	padding-left: 40px;   
+	padding-top:0; 
 	}	
 	
 .notice-options {
