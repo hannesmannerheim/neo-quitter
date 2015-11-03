@@ -6,7 +6,7 @@
  * @license   http://creativecommons.org/licenses/by/3.0/ Creative Commons Attribution 3.0 Unported
  * @link      http://status.net/
  */
- 
+
 /* genericons */
 @font-face {
     font-family: 'Genericons';
@@ -28,7 +28,7 @@
     src: url("./Genericons.svg#Genericons") format("svg");
   }
 }
- 
+
 /* font awesome */
 @font-face {
   font-family: 'fa';
@@ -38,25 +38,25 @@
   font-style: normal;
 }
 
- 
+
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.eot?') format('eot'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype');
+    src: url('../fonts/lato-regular-webfont.eot?') format('eot'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#webfontCjmEHx3G') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.eot?') format('eot'), url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.ttf') format('truetype');
+    src: url('../fonts/lato-bold-webfont.eot?') format('eot'), url('../fonts/lato-bold-webfont.woff') format('woff'), url('../fonts/lato-bold-webfont.ttf') format('truetype'), url('../fonts/lato-bold-webfont.svg#webfontCjmEHx3G') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato-Italic.eot?') format('eot'), url('../fonts/Lato-Italic.woff') format('woff'), url('../fonts/Lato-Italic.ttf') format('truetype');
+    src: url('../fonts/lato-italic-webfont.eot?') format('eot'), url('../fonts/lato-italic-webfont.woff') format('woff'), url('../fonts/lato-italic-webfont.ttf') format('truetype'), url('../fonts/lato-italic-webfont.svg#webfontCjmEHx3G') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -72,11 +72,11 @@ html, body {
 body {
 	background-color: #E9EAED;
     color: #222;
-    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 input, textarea, select, option {
-    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {color: #006c9b;}
@@ -131,13 +131,13 @@ address {
     background-color:#0084B4;
 	}
 address:hover {
-	background-position: -10px -635px;	
+	background-position: -10px -635px;
 	}
 address a {
     height: 34px;
-    width: 89px;	
+    width: 89px;
     display:block;
-	}	
+	}
 
 .logo {
 	display: none;
@@ -153,7 +153,7 @@ address a {
     top: 0;
     width: 100%;
     z-index: 100;
-	box-shadow:0 1px 2px rgba(0, 0, 0, 0.25)    
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.25)
 }
 
 #core {
@@ -169,19 +169,19 @@ address a {
 	}
 
 #aside_primary_wrapper {
-    background-color: transparent;  
-}    
-
-#content_wrapper  {  
-    background-color:transparent;
-    border:0 none;  
-}  
-
-
-#site_nav_local_views_wrapper  {  
     background-color: transparent;
-    border:0 none;  
-}  
+}
+
+#content_wrapper  {
+    background-color:transparent;
+    border:0 none;
+}
+
+
+#site_nav_local_views_wrapper  {
+    background-color: transparent;
+    border:0 none;
+}
 
 #site_nav_local_views {
     padding: 13px 10px 40px;
@@ -211,7 +211,7 @@ address a {
 #site_nav_global_primary a {
     padding: 2px 10px 2px 10px;
     height: 46px;
-    line-height: 46px;    
+    line-height: 46px;
     box-sizing:border-box;
     display: block;
     float: left;
@@ -238,22 +238,22 @@ address a {
     vertical-align:middle;
     padding-bottom:3px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
+	-moz-osx-font-smoothing: grayscale;
 	}
 #site_nav_global_primary #nav_admin a:before {
-	content: "\f12e";	
+	content: "\f12e";
 	}
 #site_nav_global_primary #nav_logout a:before {
-	content: "\f206";	
+	content: "\f206";
 	}
 #site_nav_global_primary #toggleqvitter a:before {
-	content: "\f0c3";	
-	}	
+	content: "\f0c3";
+	}
 #site_nav_global_primary #top_nav_doc_faq a:before {
-	content: "\f1cd";	
-	}	
-	
-	
+	content: "\f1cd";
+	}
+
+
 
 #header-search {
     top: 1px;
@@ -282,7 +282,7 @@ address a {
     top: 4px;
     width: 20px;
     z-index: 2;
-	background-position: 0px -293px;    
+	background-position: 0px -293px;
     }
 
 /* hide site notice after 5 s */
@@ -296,13 +296,13 @@ address a {
     padding: 10px 20px 10px 40px;
     position: fixed;
     text-align: left;
-    width: 100%;    
+    width: 100%;
     -moz-animation: hideSiteNotice 2s ease-in 5s forwards;
     -webkit-animation: hideSiteNotice 2s ease-in 5s forwards;
     -o-animation: hideSiteNotice 2s ease-in 5s forwards;
     animation: hideSiteNotice 2s ease-in 5s forwards;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;    
+    animation-fill-mode: forwards;
 }
 #site_notice:before {
 	width:30px;
@@ -313,7 +313,7 @@ address a {
 	top:10px;
  	content: "\f071";
  	font-family:fa;
-	}	
+	}
 @keyframes hideSiteNotice {
     to {
 		bottom:-1000px;
@@ -325,7 +325,7 @@ address a {
 		bottom:-1000px;
 		visibility:hidden;
     }
-}	
+}
 
 #header-search #search-q {
     background-color: rgba(0,0,0,0.03);
@@ -350,7 +350,7 @@ address a {
 	text-shadow:none;
 	background-color:#fff;
 	color:#666;
-	} 
+	}
 
 
 #site_nav_global_primary ul {
@@ -359,7 +359,7 @@ address a {
 	top:-10px;
 	right:190px;
 	}
-	
+
 
 #content {
     background-color: transparent;
@@ -382,9 +382,9 @@ body#doc #content_inner h1 {
 	}
 body#doc #content_inner h2 {
 	padding-top:50px;
-	line-height: 27px;	
+	line-height: 27px;
 	}
-	
+
 body#doc #content_inner h2 a {
 	font-size:0;
 	}
@@ -392,28 +392,28 @@ body#doc #content_inner h2 a:before {
 	content:"\f0aa";
 	font-family:"fa";
 	font-size:20px;
-	}		
+	}
 body#doc #content_inner h2 a:hover {
 	text-decoration:none;
-	}			
+	}
 body#doc #content_inner h2#faq-table-of-contents {
 	padding-top:20px;
 	}
 body#doc #content_inner li {
 	padding-left:20px;
 	font-weight:bold;
-	}	
+	}
 body#doc #content_inner p.indent {
     background-color: rgba(0, 0, 0, 0.1);
     border-left: 3px solid #ccc;
     margin-left: 50px;
     padding: 5px 5px 5px 10px;
-	}	
+	}
 body#doc #content_inner p.faq-credits {
 	margin-top:40px;
-	}	
-	
-	
+	}
+
+
 
 /* input forms */
 
@@ -487,7 +487,7 @@ body#doc #content_inner p.faq-credits {
     position: relative;
     width: 527px;
     overflow:hidden;
-    animation: rolldown 0.3s linear 1;    
+    animation: rolldown 0.3s linear 1;
 }
 
 @keyframes rolldown {
@@ -500,15 +500,15 @@ body #aside_primary .account_profile_block .user_profile_tags {
 	}
 
 /* filter people by tags doesn't work anyway, and is confusing as peopletags and lists have been merged, it seems */
-#filter_tags {	
+#filter_tags {
 	display:none;
 	}
 
 /* already present in right margin */
-#content_inner > .entity_actions > #entity_remote_subscribe {	
+#content_inner > .entity_actions > #entity_remote_subscribe {
 	display:none;
 	}
-	
+
 
 /* settings */
 #content_inner > .form_settings	{
@@ -533,9 +533,9 @@ body #aside_primary .account_profile_block .user_profile_tags {
     padding: 12px 12px 0;
     width: 150px;
 	padding:20px;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 	}
-	
+
 /*  profile lists */
 ul.profile_list > li {
 	background-color: #fff;
@@ -552,7 +552,7 @@ ul.profile_list > li {
 ul.profile_list li {
     margin-bottom: 8px;
 	}
-	
+
 .profile_list .h-card .p-nickname:before {
 	content:"@";
 	}
@@ -562,7 +562,7 @@ ul.profile_list li {
 .profile_list .h-card .p-nickname {
     font-size:14px;
     font-weight:bold;
-	}	
+	}
 
 .profile_list .h-card .u-photo {
     margin-right: 10px;
@@ -584,16 +584,16 @@ ul.profile_list li {
 }
 
 .profile .entity_profile .u-url {
-    font-size:0.88em;	
+    font-size:0.88em;
 	}
 
 .entity_profile .role:before {
-    content: "(";	
+    content: "(";
 	}
 .entity_profile .role:after {
     content: ")";
 }
-	
+
 .profile .entity_profile .p-locality:before {
 	content:" · ";
 	}
@@ -607,7 +607,7 @@ ul.profile_list li {
 #aside_primary .account_profile_block .entity_actions .entity_edit {
 	position:absolute;
 	height:25px;
-	width:auto;	
+	width:auto;
 	top:-5px;
 	display:block;
 	float:none;
@@ -618,14 +618,14 @@ ul.profile_list li {
 	}
 #aside_primary .account_profile_block .entity_actions .entity_edit:hover {
 	opacity:1;
-	}	
+	}
 #aside_primary .account_profile_block .entity_actions ul li a {
 	background-color:transparent !important;
 	}
-	
+
 #aside_primary .account_profile_block .entity_send-a-message { /* not working anyway */
 	display:none;
-	}	
+	}
 
 #aside_primary .section .entity_actions > p {
     background-color: transparent !important;
@@ -643,7 +643,7 @@ ul.profile_list li {
 	}
 #aside_primary .section .entity_actions > p:hover {
 /* 	opacity:1; */
-	}	
+	}
 #aside_primary .section a.entity_remote_subscribe {
 	background-color:transparent !important;
 	padding-right:2px;
@@ -708,7 +708,7 @@ ul.profile_list li {
 	}
 #aside_primary .account_profile_block .entity_actions input[type="submit"]:hover,
 #aside_primary .account_profile_block .entity_actions p:hover,
-.form_user_subscribe input[type="submit"]:hover {	
+.form_user_subscribe input[type="submit"]:hover {
     background-color: #D8D8D8;
 	background: -moz-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(216,216,216,1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,248,248,1)), color-stop(100%,rgba(216,216,216,1)));
@@ -717,17 +717,17 @@ ul.profile_list li {
 	background: -ms-linear-gradient(top, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%);
 	background: linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%);
     border-color: #BBBBBB;
-    text-decoration: none;		
+    text-decoration: none;
 	}
 .form_user_subscribe input[type="submit"] {
 	background: url("../icons-hires.png?v=1") no-repeat scroll 2px -219px / 150px 2786px, linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
     padding: 5px 0 5px 30px !important;
-    padding:5px 0 5px 30px !important;	
-	}	
+    padding:5px 0 5px 30px !important;
+	}
 .form_user_subscribe input[type="submit"]:hover {
     background: url("../icons-hires.png?v=1") 2px -219px / 150px 2786px no-repeat, linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%) !important;
-    padding:5px 0 5px 30px !important;	
-	}		
+    padding:5px 0 5px 30px !important;
+	}
 .form_user_unsubscribe input[type="submit"] {
     background-color: #019AD2 !important;
 	background: -moz-linear-gradient(top, rgba(51,188,239,1) 0%, rgba(1,154,210,1) 100%) !important;
@@ -740,10 +740,10 @@ ul.profile_list li {
     border-color: #057ED0 !important;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset !important;
     color: #FFFFFF !important;
-    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25) !important;	
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25) !important;
 	}
 .form_user_unsubscribe input[type="submit"]:hover,
-.form_user_block input[type="submit"]:hover {	
+.form_user_block input[type="submit"]:hover {
     background-color: #c43c35 !important;
 	background: -moz-linear-gradient(top, rgba(238,95,91,1) 0%, rgba(196,60,53,1) 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,95,91,1)), color-stop(100%,rgba(196,60,53,1))) !important;
@@ -754,11 +754,11 @@ ul.profile_list li {
     background-repeat: repeat-x;
     border-color: #a93730 #a93730 #952f2a !important;
     color:#ffffff !important;
-    text-shadow: none !important;    
+    text-shadow: none !important;
 	}
 
 /*  smaller button in userdirectory */
-#userdirectory .form_user_subscribe input[type="submit"], 
+#userdirectory .form_user_subscribe input[type="submit"],
 #userdirectory .form_user_unsubscribe input[type="submit"] {
 	font-size:11px;
 	width:110px;
@@ -811,7 +811,7 @@ ul.profile_list li {
     border-radius:3px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis;
 }
 
 #site_nav_object a {
@@ -825,7 +825,7 @@ ul.profile_list li {
 #site_nav_object li.current a {
 	background-position:-3px -53px;
     color:rgba(0,0,0,0.8);
-	}	
+	}
 
 #site_nav_local_views li a:hover{
 	background-position:-3px -79px;
@@ -900,7 +900,7 @@ ul.profile_list li {
     top: 4px;
     margin-bottom: 6px;
     height:24px;
-    width:24px;    
+    width:24px;
 }
 #popular_notices .p-author {
 	position:relative;
@@ -917,7 +917,7 @@ ul.profile_list li {
 
 .section .avatar {
     box-shadow: none;
-	border-radius: 5px; 
+	border-radius: 5px;
 	}
 .account_profile_block {
 	position:relative;
@@ -932,8 +932,8 @@ ul.profile_list li {
     left: 0;
     position: absolute;
     top: 0;
-    width: 96px;   
-	}	
+    width: 96px;
+	}
 
 .invite_button {
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(221, 221, 221, 1) 100%) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
@@ -954,7 +954,7 @@ ul.profile_list li {
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
     width: 150px;
-    
+
 }
 
 .invite_button:hover {
@@ -966,7 +966,7 @@ ul.profile_list li {
 	background: -ms-linear-gradient(top, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%);
 	background: linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(216,216,216,1) 100%);
     border-color: #BBBBBB;
-    text-decoration: none;	
+    text-decoration: none;
     color: rgba(0,0,0,0.8);
 }
 
@@ -980,7 +980,7 @@ ul.profile_list li {
     position: relative;
     width: 520px;
 	}
-	
+
 .form_notice_placeholder {
 /*     background-position: 12px 12px; */
 background:none;
@@ -998,12 +998,12 @@ background:none;
     top: 19px;
     width: 50px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
+	-moz-osx-font-smoothing: grayscale;
 	}
 .form_notice_placeholder:hover {
 	opacity:0.7;
 	}
-	
+
 .form_notice_placeholder .placeholder {
     border: 0 none;
     color: #000;
@@ -1013,15 +1013,15 @@ background:none;
     z-index: 97;
     font-size:15px;
     background:transparent;
-	}	
-.form_notice_placeholder .placeholder, 
-.form_notice textarea, 
-.input_form .form_settings li input, 
-.input_form .form_settings li textarea, 
+	}
+.form_notice_placeholder .placeholder,
+.form_notice textarea,
+.input_form .form_settings li input,
+.input_form .form_settings li textarea,
 .threaded-replies .placeholder {
     border-radius: 0;
     box-shadow: none;
-}	
+}
 
 .form_notice textarea {
 	outline:none;
@@ -1030,7 +1030,7 @@ background:none;
     box-shadow: none;
     display: block;
     float: none;
-    resize: none; 
+    resize: none;
     width:518px;
     padding:12px;
     height: 60px;
@@ -1053,12 +1053,12 @@ background:none;
     top: 0px;
     width: 35px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
-	color:rgba(0,0,0,0.6);	
+	-moz-osx-font-smoothing: grayscale;
+	color:rgba(0,0,0,0.6);
 	text-indent:0;
 	text-align:left;
 	}
-	
+
 .checkbox-wrapper.checked label.checkbox,
 .checkbox-wrapper.unchecked label.checkbox {
 	background-image:none;
@@ -1066,7 +1066,7 @@ background:none;
     padding-left: 30px;
     font-size:0;
     color:transparent;
-	}	
+	}
 .checkbox-wrapper.checked label.checkbox:before,
 .checkbox-wrapper.unchecked label.checkbox:before {
 	content: "\f023";
@@ -1078,14 +1078,14 @@ background:none;
     top: 0px;
     width: 35px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
-	color:rgba(0,0,0,0.6);	
+	-moz-osx-font-smoothing: grayscale;
+	color:rgba(0,0,0,0.6);
 	text-indent:0;
 	text-align:left;
-	}	
+	}
 .checkbox-wrapper.unchecked label.checkbox:before {
-	content: "\f09c";	
-	}	
+	content: "\f09c";
+	}
 
 .form_notice .count {
     right: -18px;
@@ -1096,10 +1096,10 @@ background:none;
     background-color: #F6F7F8;
 	height:130px;
     }
-    
+
 .form_notice {
     margin-bottom: 0;
-}    
+}
 
 .form_notice .checkbox-wrapper {
     display: block;
@@ -1113,7 +1113,7 @@ background:none;
 .form_notice .to-selector > label {
 	display:none;
 	}
-	
+
 .to-selector select {
 	display:block;
 	position:absolute;
@@ -1147,20 +1147,20 @@ background:none;
 .threaded-replies .form_notice .submit {
 	height:30px;
     right: 10px !important;
-    top: 103px !important;	
+    top: 103px !important;
 	}
 .threaded-replies .notice-reply {
     clear: left;
     padding: 10px 10px 3px;
     position: relative;
-	}	
+	}
 
 
 
 /* DM's */
 body#inbox,
 body#outbox {
-	
+
 	}
 
 body#inbox .form_notice select[id="to"],
@@ -1240,17 +1240,17 @@ body#outbox #core ul.messages .notice:before {
     color:rgba(0,0,0,0.2);
 }
 #pagination .nav_next a:hover {
-    border:2px solid rgba(0,0,0,0.5);	
+    border:2px solid rgba(0,0,0,0.5);
     color:rgba(0,0,0,0.5);
     text-decoration:none;
-	}	
+	}
 
 /* notices etc */
 
 .notice .h-entry {
     overflow:visible;
 	}
-	
+
 .notice.h-entry .attachments {
     clear: both;
     margin-top: -16px;
@@ -1265,7 +1265,7 @@ body#outbox #core ul.messages .notice:before {
     line-height: 0;
     list-style: none outside none;
     margin-bottom: 0;
-	}	
+	}
 .notice .attachments .inline-attachment img {
     color: transparent;
     font-size: 0;
@@ -1273,7 +1273,7 @@ body#outbox #core ul.messages .notice:before {
     list-style: none outside none;
     margin-bottom: 0;
     padding-top:20px;
-	}		
+	}
 
 
 #content h1 {
@@ -1291,8 +1291,8 @@ body#outbox #core ul.messages .notice:before {
     clear: both;
     margin-bottom: 18px;
     color:rgba(0,0,0,0.4);
-    font-size:13px;    
-    letter-spacing: 0.3px;    
+    font-size:13px;
+    letter-spacing: 0.3px;
 }
 
 
@@ -1308,7 +1308,7 @@ body#outbox #core ul.messages .notice:before {
     border-image: none;
     border-radius: 3px;
     border-style: solid;
-    border-width: 1px;    
+    border-width: 1px;
     width:518px;
     background-color:#fff;
     padding:12px;
@@ -1324,7 +1324,7 @@ body#outbox #core ul.messages .notice:before {
 #content #notices_primary > .notices > .infscr-pages > .notice:hover,
 #content #notices_primary > .notices > .notice:hover {
     border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
-	}	
+	}
 
 .notice .p-author {
     display: inline-block;
@@ -1335,7 +1335,7 @@ body#outbox #core ul.messages .notice:before {
     padding-right:5px;
 	}
 ul.messages .notice .p-author {
-	
+
 	}
 
 #content .notices > .notice > .threaded-replies .addressees {
@@ -1350,7 +1350,7 @@ ul.messages .notice .p-author {
 	}
 
 .notice .addressees {
-	
+
 	}
 
 .notice .addressees {
@@ -1368,15 +1368,15 @@ ul.messages .notice .p-author {
 .notice .addressees .addressee.group:before {
     content: "!";
 	}
-	
+
 #popular_notices .notice .p-author {
     display: inline;
-	}	
+	}
 
 #core .p-author .u-photo {
     float: left;
     margin-right: 8px;
-	border-radius: 5px;    	
+	border-radius: 5px;
 }
 #core #content .p-author:before {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1388,11 +1388,11 @@ ul.messages .notice .p-author {
     position: absolute;
     top: 12px;
     width: 48px;
-	border-radius: 5px;        
+	border-radius: 5px;
 }
 
 #core #content .peopletag-profile .p-author:before {
-    width:96px;	
+    width:96px;
     height:96px;
     left: 0;
     top: 0;
@@ -1405,7 +1405,7 @@ ul.messages .notice .p-author {
     margin-top: 0;
     position: relative;
     white-space: normal;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .notice .attachment:not(.more) {
@@ -1430,7 +1430,7 @@ ul.messages .notice .p-author {
 #content #content_inner > .notices > .notice.notice-source-activity > .entry-metadata,
 #content #notices_primary > .threaded-notices > .notice.notice-source-activity > .entry-metadata,
 #content #notices_primary > .notices > .notice.notice-source-activity > .entry-metadata {
-    margin-left: 0;	
+    margin-left: 0;
 	}
 
 #content .threaded-notices > .notice > .entry-metadata a,
@@ -1441,13 +1441,13 @@ ul.messages .notice .p-author {
 	color:#006c9b;
 	font-style:italic;
 	}
-	
+
 #content .notices > .notice > .threaded-replies .entry-metadata .conversation,
 #content .notices > .notice > .threaded-replies .entry-metadata .source {
 	display:none;
 	}
-		
-	
+
+
 .entry-metadata span.source:before {
 	content:"\00a0·\00a0";
 	}
@@ -1604,17 +1604,17 @@ ul.messages .notice .p-author {
     padding-top: 0;
     width: 540px;
 	}
-	
+
 #conversation .notices .notices {
     background-color: rgba(200, 200, 200, 0.05);
     float: left;
     margin-left: -12px;
 	width: 540px;
-}	
+}
 
 .threaded-replies:empty {
     display:none;
-	} 
+	}
 
 .threaded-replies .notice-faves:before,
 .threaded-replies .notice-repeats:before,
@@ -1632,13 +1632,13 @@ ul.messages .notice .p-author {
 .threaded-replies .notice-repeats:before {
     content: "\f079";
 	}
-.notice-reply-comments > a:before {	
+.notice-reply-comments > a:before {
     font: 14px/1 "Genericons";
     content: "\f431";
 	}
-	
-	
-#content .notice .threaded-replies .notice, 
+
+
+#content .notice .threaded-replies .notice,
 #content .notice .threaded-replies .notice-data,
 #content .notice .threaded-replies .notice-reply-comments {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -1650,13 +1650,13 @@ ul.messages .notice .p-author {
     padding-bottom: 1ex;
     padding-top: 1ex;
     width: 522px;
-	}	
+	}
 #content .notice .threaded-replies .notice:nth-last-child(2),
 #content .notice .threaded-replies .notice-data:nth-last-child(2),
 #content .notice .threaded-replies .notice-reply-comments:nth-last-child(2) {
-    border-bottom: 0 none;	
+    border-bottom: 0 none;
 	}
-	
+
 .threaded-replies .notice .p-author {
     float: left;
     font-size: 13px;
@@ -1665,25 +1665,25 @@ ul.messages .notice .p-author {
     padding-right: 5px;
     position: relative;
     z-index: 20;
-    }	
+    }
 #core #content .threaded-replies .p-author:before {
     height: 32px;
     left: -40px;
     top: 3px;
     width: 32px;
     z-index: 10;
-	}	
-	
+	}
+
 .threaded-replies .notice.h-entry .attachments,
 .threaded-replies .notice .notice-faves,
 .threaded-replies .notice .notice-repeats {
     padding-left: 40px;
-	}	
-	
+	}
+
 .threaded-replies .notice .addressees,
 .threaded-replies .notice .addressees li {
     display: inline;
-	}	
+	}
 #content .threaded-replies .notice .p-author .u-photo {
     float: none;
     height: 32px;
@@ -1692,19 +1692,19 @@ ul.messages .notice .p-author {
     top: 10px;
     width: 32px;
 	top: 3px;
-	}		
-	
+	}
+
 #content .notice .threaded-replies .notice div.e-content {
     margin: 0;
     font-size:13px;
-	padding-left: 40px;   
-	padding-top:0; 
-	}	
-	
+	padding-left: 40px;
+	padding-top:0;
+	}
+
 .notice-options {
 	margin-bottom: 8px;
     margin-top: 8px;
-    margin-right: 0px;    
+    margin-right: 0px;
     height:20px;
 	}
 
@@ -1713,14 +1713,14 @@ ul.messages .notice .p-author {
     margin-bottom: 2px;
     margin-top: 2px;
     margin-left:40px;
-	}	
+	}
 
 #content .threaded-replies .notice-options {
 	position:absolute;
 	bottom:0;
 	right:0px;
 	height:25px;
-	}	
+	}
 
 #content .threaded-replies .notice-faves,
 #content .threaded-replies .notice-repeats {
@@ -1728,25 +1728,25 @@ ul.messages .notice .p-author {
 	font-size:12px;
 	}
 
-#content .threaded-notices .notice-options input.submit, 
+#content .threaded-notices .notice-options input.submit,
 #content .threaded-notices .notice-options a,
-#content .notices .notice-options input.submit, 
+#content .notices .notice-options input.submit,
 #content .notices .notice-options a {
     opacity: 1;
     background-image:none;
 }
-#content .threaded-notices .notice-options input.submit:hover, 
+#content .threaded-notices .notice-options input.submit:hover,
 #content .threaded-notices .notice-options a:hover,
-#content .notices .notice-options input.submit:hover, 
+#content .notices .notice-options input.submit:hover,
 #content .notices .notice-options a:hover {
     opacity: 1;
 }
 
-#content .threaded-replies .notice-options input.submit, 
+#content .threaded-replies .notice-options input.submit,
 #content .threaded-replies .notice-options a {
     opacity: 1;
 }
-#content .threaded-replies .notice-options input.submit:hover, 
+#content .threaded-replies .notice-options input.submit:hover,
 #content .threaded-replies .notice-options a:hover {
     opacity: 1;
 }
@@ -1758,21 +1758,21 @@ ul.messages .notice .p-author {
     margin-left: 10px;
     margin-right:0;
     background-image:none;
-	position:relative;	
+	position:relative;
 }
 
-#content .threaded-notices .notice-options form:not(.dialogbox), 
-#content .threaded-notices .notice-options a, 
+#content .threaded-notices .notice-options form:not(.dialogbox),
+#content .threaded-notices .notice-options a,
 #content .notices .notice-options form:not(.dialogbox),
 #content .notices .notice-options a {
 	position:relative;
 	}
 
-#content .threaded-notices .notice-options form:not(.dialogbox) input, 
-#content .threaded-notices .notice-options a, 
+#content .threaded-notices .notice-options form:not(.dialogbox) input,
+#content .threaded-notices .notice-options a,
 #content .notices .notice-options form:not(.dialogbox) input,
 #content .notices .notice-options a,
-#content .threaded-notices .notice-options span, 
+#content .threaded-notices .notice-options span,
 #content .notices .notice-options span {
 	position:relative;
 	height:25px;
@@ -1795,31 +1795,31 @@ ul.messages .notice .p-author {
     top: 0px;
     width: 20px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
-	color:#ccc;	
+	-moz-osx-font-smoothing: grayscale;
+	color:#ccc;
 	text-indent:0;
 	text-align:left;
 	}
 .notice-options .form_disfavor:before {
-	color:#ff9b00;		
+	color:#ff9b00;
 	}
 .notice-options .notice_reply:before {
-	content: "\f112";	
+	content: "\f112";
 	margin-top:1px;
-	}	
+	}
 .notice-options .repeated:before,
 .notice-options .form_repeat:not(.dialogbox):before {
-	content: "\f079";	
+	content: "\f079";
 	}
 .notice-options .repeated:before {
 	color:#609928;
 	}
 .notice-options .notice_delete:before {
-    font: 25px/1 "Genericons";	
-	content: "\f407";    
+    font: 25px/1 "Genericons";
+	content: "\f407";
 	margin-top:-3px;
-	}	
-	
+	}
+
 .threaded-replies .notice-options .notice_delete,
 .threaded-replies .notice-options .notice_reply,
 .threaded-replies .notice-options .form_favor,
@@ -1827,28 +1827,28 @@ ul.messages .notice .p-author {
 .threaded-replies .notice-options .form_repeat,
 .threaded-replies .notice-options .repeated {
 	margin-left:5px;
-	}	
+	}
 .threaded-replies .notice-options .notice_reply:before,
 .threaded-replies .notice-options .form_favor:before,
 .threaded-replies .notice-options .form_disfavor:before,
 .threaded-replies .notice-options .form_repeat:not(.dialogbox):before,
 .threaded-replies .notice-options .repeated:before {
-    font: 17px/1 "fa";	
-	}	
+    font: 17px/1 "fa";
+	}
 .threaded-replies .notice-options .notice_delete:before {
     font: 22px/1 "Genericons";
-	margin-top:-2px;    		
+	margin-top:-2px;
 	margin-left:-2px;
 	}
-#content .threaded-notices .threaded-replies .notice-options form:not(.dialogbox) input, 
-#content .threaded-notices .threaded-replies .notice-options a, 
+#content .threaded-notices .threaded-replies .notice-options form:not(.dialogbox) input,
+#content .threaded-notices .threaded-replies .notice-options a,
 #content .notices .threaded-replies .notice-options form:not(.dialogbox) input,
 #content .notices .threaded-replies .notice-options a,
 #content .notices .threaded-replies .notice-options span {
 	height:20px;
 	width:20px;
-	}	
-	
+	}
+
 .notice-options .notice_delete:before,
 .notice-options .notice_reply:before,
 .notice-options .form_favor:before,
@@ -1867,8 +1867,8 @@ ul.messages .notice .p-author {
 	opacity:1;
 	}
 
-	
-	
+
+
 
 #showstream .entry-metadata .repeat {
 	background-image:none;
@@ -1883,7 +1883,7 @@ ul.messages .notice .p-author {
     top: -35px;
     width: 30px;
 	}
-#showstream .entry-metadata .repeat:before {	
+#showstream .entry-metadata .repeat:before {
 	content: "\f079";
     background-color: #609928;
     border-radius: 25px;
@@ -1901,10 +1901,10 @@ ul.messages .notice .p-author {
     top: 2px;
     width: 25px;
     -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;	
+	-moz-osx-font-smoothing: grayscale;
 	box-shadow:1px 1px 5px rgba(255,255,255,0.5);
 	}
-	
+
 
 #notices_primary .notices:not(.threaded-notices) .repeat.h-entry {
 	display:none;
@@ -1927,7 +1927,7 @@ ul.messages .notice .p-author {
 	}
 #nav_local_default a {
 	padding-left:32px;
-	}	
+	}
 #nav_profile a:before,
 #nav_timeline_replies a:before,
 #nav_timeline_personal a:before,
@@ -1943,7 +1943,7 @@ ul.messages .notice .p-author {
     display: inline;
     font-family:'Genericons';
     font-size:20px;
-	line-height:22px;    
+	line-height:22px;
 	position:absolute;
     display:block;
     box-sizing:border-box;
@@ -1951,70 +1951,70 @@ ul.messages .notice .p-author {
     width:22px;
     margin-left:-22px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;		
+	-moz-osx-font-smoothing: grayscale;
 	color:rgba(0,0,0,0.4);
 	}
 .nav li.current a:before {
-	color:rgba(0,0,0,0.6) !important;	
-	font-weight:normal !important;	
-	}	
+	color:rgba(0,0,0,0.6) !important;
+	font-weight:normal !important;
+	}
 #nav_profile a:before {
 	content: "\f304";
-	margin-top:-1px;	
+	margin-top:-1px;
 	}
 #nav_timeline_replies a:before {
 	content: "\f086";
     font-family:'fa';
-    font-size:14px;	
+    font-size:14px;
     margin-left:-19px;
 	}
 #nav_local_default li:first-child ul.nav li:nth-child(4) a:before {
-	content: "\f0e0";		
+	content: "\f0e0";
     font-family:'fa';
-    font-size:12px;	
+    font-size:12px;
     margin-left:-18px;
-	}	
+	}
 #nav_timeline_favorites a:before {
 	content: "\f005";
     font-family:'fa';
-    font-size:14px;	
+    font-size:14px;
     margin-left:-18px;
 	}
 #nav_timeline_public a:before {
-	content: "\f475";	
-	} 
+	content: "\f475";
+	}
 #nav_groups a:before {
-	content: "\f0c0";		
+	content: "\f0c0";
     font-family:'fa';
-    font-size:12px;	
+    font-size:12px;
     margin-left:-18px;
-	}	
+	}
 #nav_recent-tags a:before {
-	content: "\f02c";		
+	content: "\f02c";
     font-family:'fa';
-    font-size:12px;	
+    font-size:12px;
     margin-left:-18px;
     }
 #nav_timeline_favorited a:before {
-	content: "\f140";		
+	content: "\f140";
     font-family:'fa';
-    font-size:14px;	
+    font-size:14px;
     margin-left:-17px;
 	}
 #nav_directory a:before {
-	content: "\f1ae";		
+	content: "\f1ae";
     font-family: "fa";
     font-size: 15px;
     margin-left: -16px;
     margin-top: -1px;
 	}
 #nav_lists a:before {
-	content: "\f0c9";		
+	content: "\f0c9";
     font-family: "fa";
     font-size: 15px;
     margin-left: -18px;
 	}
-    
+
 .form_group_join,
 .form_group_leave,
 .form_group_delete {
@@ -2035,12 +2035,12 @@ ul.messages .notice .p-author {
 .peopletags_edit_button:before,
 .form_group_join:before,
 .form_group_leave:before,
-.form_group_delete:before {	
+.form_group_delete:before {
 	content: "\f14b";
     display: inline;
     font-family:'fa';
     font-size:18px;
-	line-height:20px;    
+	line-height:20px;
 	position:absolute;
     display:block;
     box-sizing:border-box;
@@ -2048,31 +2048,31 @@ ul.messages .notice .p-author {
     width:20px;
     margin-left:-22px;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;		
+	-moz-osx-font-smoothing: grayscale;
 	color:rgba(0,0,0,0.6);
-	}    
+	}
 .entity_edit a:hover:before,
 .entity_remote_subscribe:hover:before,
 .peopletags_edit_button:hover:before,
 .form_group_join:hover:before,
 .form_group_leave:hover:before,
-.form_group_delete:hover:before {	    
+.form_group_delete:hover:before {
 	color:rgba(0,0,0,0.8);
 	}
 .entity_remote_subscribe:before {
-	content: "\f0fe";	
-	}	
+	content: "\f0fe";
+	}
 #export_data a:before {
-	content: "\f143";	
+	content: "\f143";
     margin-left: -25px;
     margin-top: -2px;
-    }	
+    }
 #export_data a {
 	padding-left:25px !important;
-	}    
+	}
 #export_data a:hover:before {
 	color:#ff6600;
-	}    
+	}
 
 .peopletags_edit_button {
 	position:relative;
@@ -2080,31 +2080,31 @@ ul.messages .notice .p-author {
 
 .peopletags_edit_button:before {
     margin-left: -2px;
-    top: -2px;	
+    top: -2px;
 	}
 
 .form_group_join:before,
 .form_group_leave:before,
 .form_group_delete:before {
-	content: "\f0fe"; 
+	content: "\f0fe";
 	margin-left:4px;
 	top:4px;
 	}
 .form_group_leave:before {
-	content: "\f146"; 
+	content: "\f146";
 	}
 .form_group_delete:before {
-	content: "\f071"; 
-	}	
-	
-	
+	content: "\f071";
+	}
+
+
 
 #export_data li a.foaf,
 #export_data li a.json,
 #export_data li:nth-child(2) {
 	display:none;
 	}
- 
+
 
 .group_profile_block .entity_actions li a,
 .group_profile_block .entity_actions input.submit {
@@ -2125,9 +2125,9 @@ border: 1px solid rgba(0, 0, 0, 0.3);
 #gnusocial-version a,
 #gnusocial-version p {
 	margin:0;
-	color:rgba(0,0,0,0.5);	
+	color:rgba(0,0,0,0.5);
 	}
-    
+
 
 .form_notice input.submit, .form_settings input.submit, .form_settings input.cancel, #form_invite input.submit,
 .entity_subscribe .dialogbox input.submit_dialogbox,
