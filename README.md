@@ -22,7 +22,8 @@ along with Neo Quitter. If not, see <http://www.gnu.org/licenses/>.
 About
 -----
 
-Neo Quitter is based Neo, the standard theme for GNU Social.  
+Neo Quitter is based Neo, the standard theme for GNU Social. This branch only works 
+with GNU social 1.1.1! 
 
 
 Setup
